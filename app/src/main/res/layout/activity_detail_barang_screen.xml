@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailBarangScreen">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imgBarangdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@android:color/white" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_hargabarangdetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:text="Harga Barang"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/slashhrg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_toEndOf="@+id/tv_hargabarangdetail"
+                            android:text="/"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/stuanbarang_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toEndOf="@+id/slashhrg"
+                            android:text="satuan"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_namabarangdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_hargabarangdetail"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Nama Barang"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/txtstokbrg"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Stok Barang"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/titikduakode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titikduastok"
+                            android:layout_toEndOf="@+id/txtstokbrg"
+                            android:text=": "
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_stokbrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_toEndOf="@+id/titikduastok"
+                            android:text="1"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txtkodebrg"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtstokbrg"
+                            android:layout_marginLeft="20dp"
+                            android:text="Kode Barang"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/titikduastok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/txtstokbrg"
+                            android:text=": "
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_kodebrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_stokbrg"
+                            android:layout_marginRight="20dp"
+                            android:layout_toEndOf="@+id/titikduastok"
+                            android:text="12345678"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/txt_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="Deskripsi Product : "
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_desc"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="desc"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="13dp"
+                            android:text="Jumlah yang ingin dibeli"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/titikduaco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toEndOf="@+id/txtco"
+                            android:text=": "
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/et_co"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@+id/titikduaco"
+                            android:inputType="number"
+                            />
+
+                        <Button
+                            android:id="@+id/btnco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_co"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="20dp"
+                            android:text="Checkout" />
+                </RelativeLayout>
+
+        </LinearLayout>
+</ScrollView>
